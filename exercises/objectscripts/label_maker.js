@@ -14,4 +14,12 @@ function printContact(contact) {
   console.log(contact.city + ",", contact.state, contact.zip);
 }
 
-printContact(myInfo);
+function printContact1(contact) {
+  console.log(`
+  ${contact.name}
+  ${contact.address}
+  ${contact.city}, ${contact.state} ${contact.zip}
+  `);
+}
+
+printContact1(myInfo);
