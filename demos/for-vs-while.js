@@ -8,3 +8,6 @@ while (lap <= 500) {
   lap = lap + 1; //lap++ | 3. code that runs at the bottom of each iteration
 }
 
+for (let lap = 1; lap <= 500; lap = lap + 1) {
+  console.log("Car is on lap: " + lap);
+}
