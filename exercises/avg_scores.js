@@ -24,11 +24,14 @@ function getAverage(scores) {
     total += scores[i];
   }
   //to get an average score, add all scores together (total the scores) and divide by the number of scores (scores.length)
+  //return the average score you calculated
   return total / scores.length;
 }
 
 //define a variable to hold the average score: let myAverage
 //              call the getAverage function and pass it the array of scores stored in the myScores variable on the first line
+// catch the average score in the myAverage variable being returned from the getAverage function
+//  myAverage   <---------------------   
 let myAverage = getAverage(myScores);
 //display/print out the string "My average score is:" and concatenate the average score which is stored in the variable myAverage
 console.log("My average score is:" + myAverage);
