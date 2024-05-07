@@ -6,7 +6,7 @@
 let myScores = [92, 98, 84, 76, 89, 99, 100];
 
 //define a function getAverage
-//the functions should accept an array named scores as a parameter
+//the function should accept an array named scores as a parameter
 function getAverage(scores) {
   //define a variable named total and assign it an initial value of 0
   let total = 0;
@@ -20,7 +20,7 @@ function getAverage(scores) {
   for (let i = 0; i < scores.length; i++) {
     //scores[i] is scores[0] then scores[1] then scores[2]
     //scores[1] is one of the test scores (a number)
-    //total = total + scores[i]
+    //total += scores[i] is the same as total = total + scores[i]
     total += scores[i];
   }
   //to get an average score, add all scores together (total the scores) and divide by the number of scores (scores.length)
@@ -28,7 +28,7 @@ function getAverage(scores) {
 }
 
 //define a variable to hold the average score: let myAverage
-//              call the getAverage function and pass it the array of scores stored in the myScores variable on the first line 
+//              call the getAverage function and pass it the array of scores stored in the myScores variable on the first line
 let myAverage = getAverage(myScores);
 //display/print out the string "My average score is:" and concatenate the average score which is stored in the variable myAverage
 console.log("My average score is:" + myAverage);
