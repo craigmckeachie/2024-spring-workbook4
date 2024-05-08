@@ -22,3 +22,8 @@ for (let index = 0; index < menu.length; index++) {
 }
 
 console.log(drinks);
+
+
+
+
+
