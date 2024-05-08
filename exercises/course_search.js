@@ -78,6 +78,7 @@ for (let index = 0; index < courses.length; index++) {
     cheapCourseTitles.push(course);
   }
 }
+
 console.log("These are the titles of the courses that cost $50 or less");
 console.log(cheapCourseTitles);
 
