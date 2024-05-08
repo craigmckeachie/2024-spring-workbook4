@@ -44,35 +44,56 @@ let courses = [
 
 // When does the PROG200 course start?
 //loop through all the courses
-for (let index = 0; index < courses.length; index++) {
-  const course = courses[index];
-  //and find the course with a given courseid
+// for (let index = 0; index < courses.length; index++) {
+//   const course = courses[index];
+//   //and find the course with a given courseid
+//   if (course.CourseId == "PROG200") {
+//     console.log("The PROG200 course starts on: " + course.StartDate);
+//   }
+// }
+
+for (const course of courses) {
   if (course.CourseId == "PROG200") {
     console.log("The PROG200 course starts on: " + course.StartDate);
   }
 }
 
 // What is the title of the PROJ500 course?
-for (let index = 0; index < courses.length; index++) {
-  const course = courses[index];
+// for (let index = 0; index < courses.length; index++) {
+//   const course = courses[index];
+//   if (course.CourseId == "PROJ500") {
+//     console.log("The PROJ500 course title is: " + course.Title);
+//   }
+// }
+
+for (const course of courses) {
   if (course.CourseId == "PROJ500") {
     console.log("The PROJ500 course title is: " + course.Title);
   }
 }
 
-// What are the titles of the courses that cost $50 or less?
-for (let index = 0; index < courses.length; index++) {
-  const course = courses[index];
-  const fee = Number(course.Fee);
-  if (fee <= 50) {
-    console.log("This course is less than $50: " + course.Title);
-  }
-}
+// // What are the titles of the courses that cost $50 or less?
+// for (let index = 0; index < courses.length; index++) {
+//   const course = courses[index];
+//   const fee = Number(course.Fee);
+//   if (fee <= 50) {
+//     console.log("This course is less than $50: " + course.Title);
+//   }
+// }
 
-// What are the titles of the courses that cost $50 or less in an array?
+// // What are the titles of the courses that cost $50 or less in an array?
+// let cheapCourseTitles = [];
+// for (let index = 0; index < courses.length; index++) {
+//   const course = courses[index];
+//   const fee = Number(course.Fee);
+//   if (fee <= 50) {
+//     cheapCourseTitles.push(course);
+//   }
+// }
+
 let cheapCourseTitles = [];
-for (let index = 0; index < courses.length; index++) {
-  const course = courses[index];
+
+for (const course of courses) {
   const fee = Number(course.Fee);
   if (fee <= 50) {
     cheapCourseTitles.push(course);
