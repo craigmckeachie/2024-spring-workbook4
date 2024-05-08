@@ -52,7 +52,6 @@ for (let index = 0; index < courses.length; index++) {
   }
 }
 
-
 // What is the title of the PROJ500 course?
 for (let index = 0; index < courses.length; index++) {
   const course = courses[index];
@@ -61,6 +60,25 @@ for (let index = 0; index < courses.length; index++) {
   }
 }
 
-
 // What are the titles of the courses that cost $50 or less?
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  const fee = Number(course.Fee);
+  if (fee <= 50) {
+    console.log("This course is less than $50: " + course.Title);
+  }
+}
+
+// What are the titles of the courses that cost $50 or less in an array?
+let cheapCourseTitles = [];
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  const fee = Number(course.Fee);
+  if (fee <= 50) {
+    cheapCourseTitles.push(course);
+  }
+}
+console.log("These are the titles of the courses that cost $50 or less");
+console.log(cheapCourseTitles);
+
 // What classes meet in "Classroom 1"?
