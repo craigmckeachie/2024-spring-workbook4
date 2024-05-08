@@ -18,5 +18,8 @@ let teams = [
 ];
 
 let positionInArray = teams.indexOf("Memphis Grizzlies");
-console.log(positionInArray);
+console.log(positionInArray); //2, zero-based
+
+let positionInArray1 = teams.indexOf("Cleveland Browns");
+console.log(positionInArray1); //doesn't exist -1
 
