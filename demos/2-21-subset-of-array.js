@@ -7,3 +7,18 @@ let menu = [
   { id: 4, item: "Ice tea", category: "Drink", price: 2.19 },
   { id: 5, item: "Coke", category: "Drink", price: 2.29 },
 ];
+
+//create a new array to hold the matching items
+let drinks = [];
+//loop through the existing array
+for (let index = 0; index < menu.length; index++) {
+  const menuItem = menu[index];
+  console.log(menuItem);
+  //find matching items
+  if (menuItem.category == "drink") {
+    //add matching items to the new array
+    drinks.push(menuItem);
+  }
+}
+
+console.log(drinks);
