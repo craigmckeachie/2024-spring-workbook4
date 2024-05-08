@@ -38,9 +38,29 @@ let courses = [
   },
 ];
 
+// let course = courses[2];
+// console.log(course);
+// console.log(course.StartDate);
+
 // When does the PROG200 course start?
+//loop through all the courses
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  //and find the course with a given courseid
+  if (course.CourseId == "PROG200") {
+    console.log("The PROG200 course starts on: " + course.StartDate);
+  }
+}
 
 
 // What is the title of the PROJ500 course?
+for (let index = 0; index < courses.length; index++) {
+  const course = courses[index];
+  if (course.CourseId == "PROJ500") {
+    console.log("The PROJ500 course title is: " + course.Title);
+  }
+}
+
+
 // What are the titles of the courses that cost $50 or less?
 // What classes meet in "Classroom 1"?
