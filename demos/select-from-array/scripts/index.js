@@ -56,11 +56,12 @@ const states = [
 function init() {
   const statesList = document.getElementById("statesList");
 
-  const option = document.createElement("option");
-  option.value = "NY";
-  option.innerText = "New York";
-
-  statesList.appendChild(option);
+  for (const state of states) {
+    const option = document.createElement("option");
+    option.value = state.abbrev;
+    option.innerText = state.name;
+    statesList.appendChild(option);
+  }
 }
 
 window.onload = init;
