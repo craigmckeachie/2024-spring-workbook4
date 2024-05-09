@@ -53,6 +53,12 @@ let courses = [
 // }
 
 for (const course of courses) {
+    console.log(course);
+}
+
+
+
+for (const course of courses) {
   if (course.CourseId == "PROG200") {
     console.log("The PROG200 course starts on: " + course.StartDate);
   }
