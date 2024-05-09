@@ -57,7 +57,8 @@ const statesList = document.getElementById("statesList");
 
 function init() {
   const displayStateButton = document.getElementById("displayStateButton");
-  displayStateButton.onclick = displayState;
+  // displayStateButton.onclick = displayState;
+  statesList.onchange = displayState;
 
   //loop through states array one at a time
   for (const state of states) {
@@ -76,7 +77,12 @@ function init() {
 function displayState() {
   console.log(statesList.value);
   const messageParagraph = document.getElementById("messageParagraph");
-  messageParagraph.innerText = statesList.value;
+  let selectedStateAbbrev = statesList.value;
+  for (const state of states) {
+    if (state.abbrev == selectedStateAbbrev) {
+      messageParagraph.innerText = state.name;
+    }
+  }
 }
 
 //wait for html to load and then call init function
